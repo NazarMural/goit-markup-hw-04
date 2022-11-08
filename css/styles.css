@@ -3,13 +3,14 @@
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
-    --bgd-color: #ffffff;
+    --primary-bgd-color: #ffffff;
+    --secondary-bgd-color: #f5f4fa;
 
 }
 
 /* - - - - - - Гобальні стилі - - - - - - */
 body {
-    background-color: var(--bgd-color);
+    background-color: var(--primary-bgd-color);
     color: var(--primary-text-color);
     max-width: 1600px;
     font-family: Roboto, sans-serif;
@@ -201,6 +202,34 @@ h1, h2, h3, ul, p {
     width: 270px;
 }
 
+.feature-list>.list::before {
+    content: '';
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--secondary-bgd-color);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.png);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.png);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.png);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.png);
+}
+
 .feature-section {
     padding-top: 94px;
 }
@@ -217,7 +246,7 @@ h1, h2, h3, ul, p {
 
 /* - - Команда комапнії - - */
 .section-worker {
-    background-color: #f5f4fa;
+    background-color: var(--secondary-bgd-color);
     
     padding-top: 94px;
 }
@@ -304,10 +333,7 @@ h1, h2, h3, ul, p {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
-}
-
-.button-list .list:not(:last-child) {
-    margin-right: 8px;
+    gap: 8px;
 }
 
 .button-list .button {
@@ -317,7 +343,7 @@ h1, h2, h3, ul, p {
     color: var(--secondary-text-color);
     cursor: pointer;
     border: none;
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bgd-color);
     border-radius: 4px;
 
     padding: 6px 22px;
@@ -327,7 +353,9 @@ h1, h2, h3, ul, p {
 .button-list .button:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
 
@@ -336,6 +364,12 @@ h1, h2, h3, ul, p {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.project-list > .list:hover,
+.project-list>.list:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list .border {
@@ -357,7 +391,7 @@ h1, h2, h3, ul, p {
 .project-list .type {
     font-size: 16px;
     line-height: 1.88;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .project-list img {
