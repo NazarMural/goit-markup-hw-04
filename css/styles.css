@@ -291,6 +291,15 @@ h1, h2, h3, ul, p {
     padding: 60px 0;
 }
 
+.footer > .container {
+    display: flex;
+}
+
+.footer-contant {
+    width: 231px;
+    margin-right: 70px;
+}
+
 .logo-footer {
     display: inline-block;
     color: #FFFFFF;
@@ -320,6 +329,57 @@ h1, h2, h3, ul, p {
 
 .contacts-footer .list:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-sn {
+    margin-top: 12px;
+}
+
+.sn-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.sn-list {
+    display: flex;
+    gap: 10px;
+}
+
+.sn-list .link {
+    display: block;
+    font-size: 0;
+    height: 44px;
+    width: 44px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sn-list .link:hover,
+.sn-list .link:focus {
+    background-color: var(--accent-color);
+}
+
+.sn-list .icon-instagram {
+    background-image: url(../images/instagram.png);
+}
+
+.sn-list .icon-twitter {
+    background-image: url(../images/twitter.png);
+}
+
+.sn-list .icon-facebook {
+    background-image: url(../images/facebook.png);
+}
+
+.sn-list .icon-linkedin {
+    background-image: url(../images/linkedin.png);
 }
 
 /* - - - - - - Портфоліо - - - - - - */
