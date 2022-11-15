@@ -18,6 +18,7 @@
     <title>Студія</title>
   </head>
   <body>
+    <!-- Хедер -->
     <header class="header">
       <div class="container">
         <nav class="header-nav">
@@ -54,7 +55,7 @@
       <!--Герой-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button-hero" type="button">Замовити послугу</button>
+        <button class="button-hero" type="button" data-modal-open>Замовити послугу</button>
       </section>
       <!--Перелік особливостей компанії-->
       <section class="section feature-section">
@@ -117,26 +118,29 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li>
+            <li class="list">
               <img
                 src="./images/programming.jpg"
                 alt="Процес програмування сайту"
                 width="370"
               />
+              <h3 class="work-title">Десктопні додатки</h3>
             </li>
-            <li>
+            <li class="list">
               <img
                 src="./images/adaptation.jpg"
                 alt="Процес адаптації сайту"
                 width="370"
               />
+              <h3 class="work-title">Мобільні додатки</h3>
             </li>
-            <li>
+            <li class="list">
               <img
                 src="./images/design.jpg"
                 alt="Процес створення дизайну сайту"
                 width="370"
               />
+              <h3 class="work-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -353,6 +357,7 @@
           </ul>
         </div>
       </section>
+      <!-- Постійні клієнти -->
       <section class="section clients-section">
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
@@ -403,6 +408,7 @@
         </div>
       </section>
     </main>
+    <!-- Футер -->
     <footer class="footer">
       <div class="container">
         <div class="footer-contant">
@@ -458,5 +464,12 @@
         </div>
       </div>
     </footer>
+    <!-- Модалка -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="close-button" data-modal-close></p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
